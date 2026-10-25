@@ -1,0 +1,10 @@
+name: agentic-debugging
+version: 1.0.0
+description: Bug diagnosis and performance regression investigation.
+author: Åsmund Røst Wien
+dependencies:
+  apm:
+  - mattpocock/skills/skills/engineering/diagnosing-bugs#c55ee46073ed923f86ce59a5eb3b6d895095d1b7
+  mcp: []
+includes: auto
+scripts: {}

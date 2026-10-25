@@ -1,0 +1,10 @@
+name: agentic
+version: 1.0.0
+description: General purpose agent instructions and curated skills.
+author: Åsmund Røst Wien
+dependencies:
+  apm:
+    - poteto/plugins/pstack/skills/principle-guard-the-context-window#74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12
+  mcp: []
+includes: auto
+scripts: {}

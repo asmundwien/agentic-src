@@ -1,0 +1,19 @@
+lockfile_version: '1'
+apm_version: 0.31.0
+dependencies:
+- repo_url: poteto/plugins
+  name: principle-guard-the-context-window
+  host: github.com
+  resolved_commit: 74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12
+  resolved_ref: 74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12
+  version: unknown
+  virtual_path: pstack/skills/principle-guard-the-context-window
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/principle-guard-the-context-window
+  - .agents/skills/principle-guard-the-context-window/SKILL.md
+  deployed_file_hashes:
+    .agents/skills/principle-guard-the-context-window/SKILL.md: sha256:291d0125125eabbc2109c880b1c1083aa95826187119a648b26c1c8ea6367179
+  content_hash: sha256:4ba70fa93ea45d353d411daa7458e15959e6369f388cff727f639587e67b2fed
+deployments: []

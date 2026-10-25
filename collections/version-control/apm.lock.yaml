@@ -1,0 +1,21 @@
+lockfile_version: '1'
+apm_version: 0.31.0
+dependencies:
+- repo_url: mattpocock/skills
+  name: resolving-merge-conflicts
+  host: github.com
+  resolved_commit: c55ee46073ed923f86ce59a5eb3b6d895095d1b7
+  resolved_ref: c55ee46073ed923f86ce59a5eb3b6d895095d1b7
+  version: unknown
+  virtual_path: skills/engineering/resolving-merge-conflicts
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/resolving-merge-conflicts
+  - .agents/skills/resolving-merge-conflicts/SKILL.md
+  - .agents/skills/resolving-merge-conflicts/agents/openai.yaml
+  deployed_file_hashes:
+    .agents/skills/resolving-merge-conflicts/SKILL.md: sha256:9d8114f8ef0b31f535a265fc05c364bd8cf2e2895a830040e06c22acb11f54b0
+    .agents/skills/resolving-merge-conflicts/agents/openai.yaml: sha256:a1f4f96838f2ed6282eb28abbbf99029cb8fadce552baf53da90a025b8bffddf
+  content_hash: sha256:a8ddc5a6b083bbbada1e711b97b47de4bbf7d51415b4cca38d41853061dcd576
+deployments: []

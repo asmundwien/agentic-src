@@ -1,0 +1,76 @@
+lockfile_version: '1'
+apm_version: 0.31.0
+dependencies:
+- repo_url: mattpocock/skills
+  name: prototype
+  host: github.com
+  resolved_commit: c55ee46073ed923f86ce59a5eb3b6d895095d1b7
+  resolved_ref: c55ee46073ed923f86ce59a5eb3b6d895095d1b7
+  version: unknown
+  virtual_path: skills/engineering/prototype
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/prototype
+  - .agents/skills/prototype/LOGIC.md
+  - .agents/skills/prototype/SKILL.md
+  - .agents/skills/prototype/UI.md
+  - .agents/skills/prototype/agents/openai.yaml
+  deployed_file_hashes:
+    .agents/skills/prototype/LOGIC.md: sha256:f61c7d249e786a79ef289018901c348271e1798dd0b0bc5607b5c6f4d4a01ab9
+    .agents/skills/prototype/SKILL.md: sha256:714de632d116bb73f65cdb5a882db15b9369a6713b9a47c0fad827848f0bfbe3
+    .agents/skills/prototype/UI.md: sha256:723211e878acbc7b6ff09755263f3295cde724ba902ff0064da41eed51d45ad3
+    .agents/skills/prototype/agents/openai.yaml: sha256:5af65e43ab41a350436697b81e27b7f848d36782043b73c322bb2c9fa9cc55dc
+  content_hash: sha256:090ae76b97353255ca29be783d69bcc1029e0195bdf43118d0b6f7ea9acc89b0
+- repo_url: mattpocock/skills
+  name: research
+  host: github.com
+  resolved_commit: c55ee46073ed923f86ce59a5eb3b6d895095d1b7
+  resolved_ref: c55ee46073ed923f86ce59a5eb3b6d895095d1b7
+  version: unknown
+  virtual_path: skills/engineering/research
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/research
+  - .agents/skills/research/SKILL.md
+  - .agents/skills/research/agents/openai.yaml
+  deployed_file_hashes:
+    .agents/skills/research/SKILL.md: sha256:985569f15739c713d6784887c3d186d4ef9ac85bec5ad9c068d25bf0739928e4
+    .agents/skills/research/agents/openai.yaml: sha256:9b4c470d63221c1f68f22df70b83e2f12401b317babe0d1b7b5f24a974474d0d
+  content_hash: sha256:d293faf4e4da791b8046cd2eed5b4dce46f591f1a26be4099a55b968b5dbe9c9
+- repo_url: mattpocock/skills
+  name: wayfinder
+  host: github.com
+  resolved_commit: c55ee46073ed923f86ce59a5eb3b6d895095d1b7
+  resolved_ref: c55ee46073ed923f86ce59a5eb3b6d895095d1b7
+  version: unknown
+  virtual_path: skills/engineering/wayfinder
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/wayfinder
+  - .agents/skills/wayfinder/SKILL.md
+  - .agents/skills/wayfinder/agents/openai.yaml
+  deployed_file_hashes:
+    .agents/skills/wayfinder/SKILL.md: sha256:fee6e1d0c50f0e736b4ef8a599060c959afae904c9a97d82c97f049fcc3aa0f1
+    .agents/skills/wayfinder/agents/openai.yaml: sha256:88bc81a11a6d52ac67aeaa76b8b619e387020d47c5133a4dd4927fd15c4ad073
+  content_hash: sha256:e1f9cc43b89181bd3d1fe1bd7784a3e8efe260d7e09c4abb53e96ec1fc5b8a24
+- repo_url: mattpocock/skills
+  name: grilling
+  host: github.com
+  resolved_commit: c55ee46073ed923f86ce59a5eb3b6d895095d1b7
+  resolved_ref: c55ee46073ed923f86ce59a5eb3b6d895095d1b7
+  version: unknown
+  virtual_path: skills/productivity/grilling
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/grilling
+  - .agents/skills/grilling/SKILL.md
+  - .agents/skills/grilling/agents/openai.yaml
+  deployed_file_hashes:
+    .agents/skills/grilling/SKILL.md: sha256:10ff989e7498b23b5acb49d5048f11dcd906757d2f79c5cdf8a00001381296f2
+    .agents/skills/grilling/agents/openai.yaml: sha256:1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b
+  content_hash: sha256:e98f109bca3d8889f673d9f32bf84086f85a70ff9e241f8a34a4560a07ab5a39
+deployments: []

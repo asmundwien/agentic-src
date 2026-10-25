@@ -1,0 +1,23 @@
+lockfile_version: '1'
+apm_version: 0.31.0
+dependencies:
+- repo_url: wshobson/agents
+  name: nodejs-backend-patterns
+  host: github.com
+  resolved_commit: 4236bb91f8395b0435f1d8b8baf9e8e4c69a8620
+  resolved_ref: 4236bb91f8395b0435f1d8b8baf9e8e4c69a8620
+  version: unknown
+  virtual_path: plugins/javascript-typescript/skills/nodejs-backend-patterns
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/nodejs-backend-patterns
+  - .agents/skills/nodejs-backend-patterns/SKILL.md
+  - .agents/skills/nodejs-backend-patterns/references/advanced-patterns.md
+  - .agents/skills/nodejs-backend-patterns/references/details.md
+  deployed_file_hashes:
+    .agents/skills/nodejs-backend-patterns/SKILL.md: sha256:d52e1150accdc27e916f0962c9ba0872fcbe8a7d849d905dcc795c0f9d05aeae
+    .agents/skills/nodejs-backend-patterns/references/advanced-patterns.md: sha256:f5f0036b4990badcd241263298b4f9ef3d358d94e3db5d08307d5b80369ed584
+    .agents/skills/nodejs-backend-patterns/references/details.md: sha256:5f05a3d5f6ded227f5d5987b0d9f2c0c11fcc0879353860bdbaa97e2eafe1838
+  content_hash: sha256:0b04870e768afe935a25f5f4d057bdd055ef510b5ed1c68d9eb6f1d8899947a4
+deployments: []

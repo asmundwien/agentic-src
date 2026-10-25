@@ -1,0 +1,12 @@
+name: agentic-javascript-typescript
+version: 1.0.0
+description: JavaScript patterns and TypeScript best practices and types.
+author: Åsmund Røst Wien
+dependencies:
+  apm:
+  - wshobson/agents/plugins/javascript-typescript/skills/modern-javascript-patterns#4236bb91f8395b0435f1d8b8baf9e8e4c69a8620
+  - wshobson/agents/plugins/javascript-typescript/skills/typescript-advanced-types#4236bb91f8395b0435f1d8b8baf9e8e4c69a8620
+  - poteto/plugins/pstack/skills/typescript-best-practices#74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12
+  mcp: []
+includes: auto
+scripts: {}

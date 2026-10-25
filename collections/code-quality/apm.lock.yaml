@@ -1,0 +1,58 @@
+lockfile_version: '1'
+apm_version: 0.31.0
+dependencies:
+- repo_url: joshuadavidthomas/agent-skills
+  name: coding-standards
+  host: github.com
+  resolved_commit: 516dee7a422b90937b2958d11c03694154ab9c09
+  resolved_ref: 516dee7a422b90937b2958d11c03694154ab9c09
+  version: unknown
+  virtual_path: coding-standards
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/coding-standards
+  - .agents/skills/coding-standards/README.md
+  - .agents/skills/coding-standards/SKILL.md
+  - .agents/skills/coding-standards/references/boundaries.md
+  - .agents/skills/coding-standards/references/complexity.md
+  - .agents/skills/coding-standards/references/domain-modeling.md
+  - .agents/skills/coding-standards/references/effects.md
+  - .agents/skills/coding-standards/references/error-handling.md
+  - .agents/skills/coding-standards/references/maintainability.md
+  - .agents/skills/coding-standards/references/modules.md
+  - .agents/skills/coding-standards/references/state.md
+  - .agents/skills/coding-standards/references/verification.md
+  - .agents/skills/coding-standards/references/vocabulary.md
+  deployed_file_hashes:
+    .agents/skills/coding-standards/README.md: sha256:865af5d9c74e413139e031ee52f925900fc0ad2fe7a5c876de25c2ea0672eed7
+    .agents/skills/coding-standards/SKILL.md: sha256:5988235deb58e83fb5e8e96ce84bf6b0d36d9eb8276da37901f7ea5b53c21fb6
+    .agents/skills/coding-standards/references/boundaries.md: sha256:0081d0345d5c768a4a675bfb3f5c7ebbc4a7f15dad4fc54f1cf5b44340a3e49a
+    .agents/skills/coding-standards/references/complexity.md: sha256:175cd27e37d1c9778b273f13059a34f6dfc94e9fd59a192684daaa678baa2496
+    .agents/skills/coding-standards/references/domain-modeling.md: sha256:e94fe3ddfc1f310c7bad03c4ce0d01cbbefd9a3ee0db410271379337ac947612
+    .agents/skills/coding-standards/references/effects.md: sha256:45914d104b082e7cf67d9f859893e136d8e6fb636b7556212c3d64be0e44da42
+    .agents/skills/coding-standards/references/error-handling.md: sha256:8c76831d2228e3b96c1255da2fa2b9299aa9b1efb14766d3c2b12e4b2eac2c15
+    .agents/skills/coding-standards/references/maintainability.md: sha256:500e8b6970329d1439a132bb7a4205afb11f93ecbbead2b16b8111425cc25940
+    .agents/skills/coding-standards/references/modules.md: sha256:d83a4e20e4bdf7a1b7345ab08ccec1aa872294bfd1f7a26e1fb63350141da50b
+    .agents/skills/coding-standards/references/state.md: sha256:ed91788766886c34a2e7dc71f23f9bc9272ac5bf2d74b16eadd5662bb94b6e19
+    .agents/skills/coding-standards/references/verification.md: sha256:0597ecdf0178b2d4e74681e4be0c8f252f98e8c8eda45195a0f472ef468c82cd
+    .agents/skills/coding-standards/references/vocabulary.md: sha256:5562155162be17ad524be5f7803d0a63d17d8be59b542754eae8ecb52a440a5b
+  content_hash: sha256:fce2d1705f5d0e701893c1251734cb57641c2d5e28519d59f65e8c5c14ff59b5
+- repo_url: mattpocock/skills
+  name: code-review
+  host: github.com
+  resolved_commit: c55ee46073ed923f86ce59a5eb3b6d895095d1b7
+  resolved_ref: c55ee46073ed923f86ce59a5eb3b6d895095d1b7
+  version: unknown
+  virtual_path: skills/engineering/code-review
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/code-review
+  - .agents/skills/code-review/SKILL.md
+  - .agents/skills/code-review/agents/openai.yaml
+  deployed_file_hashes:
+    .agents/skills/code-review/SKILL.md: sha256:47f4e52c21694def9c7c11cbfbf891ca35eac7a93e395797515be3c8a409ae50
+    .agents/skills/code-review/agents/openai.yaml: sha256:8229ca854e11dc8e6aef2131ee03f31fb1561cf905fab9ccc325180cf3331352
+  content_hash: sha256:19b97436badcccd942152eb8fadad598f20444c4ee7d40eb971f36d65be8ba59
+deployments: []

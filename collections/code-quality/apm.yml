@@ -1,0 +1,11 @@
+name: agentic-code-quality
+version: 1.0.0
+description: Code review and coding standards.
+author: Åsmund Røst Wien
+dependencies:
+  apm:
+  - mattpocock/skills/skills/engineering/code-review#c55ee46073ed923f86ce59a5eb3b6d895095d1b7
+  - joshuadavidthomas/agent-skills/coding-standards#516dee7a422b90937b2958d11c03694154ab9c09
+  mcp: []
+includes: auto
+scripts: {}

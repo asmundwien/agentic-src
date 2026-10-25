@@ -1,0 +1,12 @@
+name: agentic-testing
+version: 1.0.0
+description: Opt-in test-driven development and JavaScript testing patterns.
+author: Åsmund Røst Wien
+dependencies:
+  apm:
+    - mattpocock/skills/skills/engineering/tdd#c55ee46073ed923f86ce59a5eb3b6d895095d1b7
+    - wshobson/agents/plugins/javascript-typescript/skills/javascript-testing-patterns#4236bb91f8395b0435f1d8b8baf9e8e4c69a8620
+    - obra/superpowers/skills/test-driven-development#5bf4e78011075bcfc0dc295f0724994cd123ee71
+  mcp: []
+includes: auto
+scripts: {}

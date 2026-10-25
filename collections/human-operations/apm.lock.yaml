@@ -1,0 +1,23 @@
+lockfile_version: '1'
+apm_version: 0.31.0
+dependencies:
+- repo_url: mattpocock/skills
+  name: wizard
+  host: github.com
+  resolved_commit: c55ee46073ed923f86ce59a5eb3b6d895095d1b7
+  resolved_ref: c55ee46073ed923f86ce59a5eb3b6d895095d1b7
+  version: unknown
+  virtual_path: skills/engineering/wizard
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/wizard
+  - .agents/skills/wizard/SKILL.md
+  - .agents/skills/wizard/agents/openai.yaml
+  - .agents/skills/wizard/template.sh
+  deployed_file_hashes:
+    .agents/skills/wizard/SKILL.md: sha256:bdf31d48211ea559878f95a4f344aeabf8d85897488ba564382bab0b000daac1
+    .agents/skills/wizard/agents/openai.yaml: sha256:98f44d682d58e262f160dc59a8befc365e0aa65820dd0261864af26aa8e59d83
+    .agents/skills/wizard/template.sh: sha256:33cbe9dfb1d0e9185b60248a52aabed14bc64785a00cac695e302e739dd6c153
+  content_hash: sha256:24acbe24c3b0b78bac07c3e7512b88140a448056562752dd8e0bce0854d8c3e8
+deployments: []

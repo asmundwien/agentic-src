@@ -1,0 +1,13 @@
+name: agentic-planning-and-research
+version: 1.0.0
+description: Plan review, prototyping, primary-source research, and large-work planning.
+author: Åsmund Røst Wien
+dependencies:
+  apm:
+  - mattpocock/skills/skills/productivity/grilling#c55ee46073ed923f86ce59a5eb3b6d895095d1b7
+  - mattpocock/skills/skills/engineering/prototype#c55ee46073ed923f86ce59a5eb3b6d895095d1b7
+  - mattpocock/skills/skills/engineering/research#c55ee46073ed923f86ce59a5eb3b6d895095d1b7
+  - mattpocock/skills/skills/engineering/wayfinder#c55ee46073ed923f86ce59a5eb3b6d895095d1b7
+  mcp: []
+includes: auto
+scripts: {}

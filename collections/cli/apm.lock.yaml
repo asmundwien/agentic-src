@@ -1,0 +1,19 @@
+lockfile_version: '1'
+apm_version: 0.31.0
+dependencies:
+- repo_url: poteto/plugins
+  name: cli-for-agents
+  host: github.com
+  resolved_commit: 74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12
+  resolved_ref: 74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12
+  version: unknown
+  virtual_path: cli-for-agent/skills/cli-for-agents
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/cli-for-agents
+  - .agents/skills/cli-for-agents/SKILL.md
+  deployed_file_hashes:
+    .agents/skills/cli-for-agents/SKILL.md: sha256:1cddd028d24ece48cd538fc1d84e49f5922dc8d04ee88caf12666b0557575e09
+  content_hash: sha256:d7fd8ae391a78becc5096d18c8dd6dde9567d2087390d450c19712db39f481e0
+deployments: []

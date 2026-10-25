@@ -1,0 +1,15 @@
+apm_modules/
+.agents/
+.claude/
+.codex/
+.github/instructions/
+.github/agents/
+.cursor/
+.gemini/
+.opencode/
+build/
+dist/
+__pycache__/
+.env
+.env.*
+.DS_Store
