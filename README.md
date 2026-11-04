@@ -40,7 +40,7 @@ The available collections are:
 
 ### Reproducibility
 
-After a normal install has generated the consumer lock:
+When an install has generated the consumer lockfile, install and audit with:
 
 ```sh
 apm install --frozen

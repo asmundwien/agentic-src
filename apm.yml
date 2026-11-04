@@ -5,6 +5,8 @@ author: Åsmund Røst Wien
 dependencies:
   apm:
     - poteto/plugins/pstack/skills/principle-guard-the-context-window#74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12
+    - poteto/plugins/pstack/skills/how#74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12
+    - poteto/plugins/pstack/skills/why#74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12
   mcp: []
 includes: auto
 scripts: {}
