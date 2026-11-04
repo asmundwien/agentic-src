@@ -1,0 +1,9 @@
+{
+  "$schema": "https://github.com/dyoshikawa/rulesync/releases/latest/download/config-schema.json",
+  "sources": [
+    {
+      "source": "mattpocock/skills@c55ee46073ed923f86ce59a5eb3b6d895095d1b7:skills/engineering",
+      "skills": ["resolving-merge-conflicts"]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://github.com/dyoshikawa/rulesync/releases/latest/download/config-schema.json",
+  "sources": [
+    {
+      "source": "mattpocock/skills@c55ee46073ed923f86ce59a5eb3b6d895095d1b7:skills/engineering",
+      "skills": ["codebase-design", "domain-modeling"]
+    },
+    {
+      "source": "joshuadavidthomas/agent-skills@516dee7a422b90937b2958d11c03694154ab9c09:.",
+      "skills": ["coding-standards"]
+    },
+    {
+      "source": "poteto/plugins@74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12:pstack/skills",
+      "skills": ["principle-subtract-before-you-add", "principle-type-system-discipline"]
+    }
+  ]
+}

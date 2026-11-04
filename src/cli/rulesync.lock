@@ -1,0 +1,19 @@
+{
+  "lockfileVersion": 1,
+  "sources": {
+    "poteto/plugins@74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12:cli-for-agent/skills": {
+      "requestedRef": "74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12",
+      "resolvedRef": "74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12",
+      "resolvedAt": "2026-11-04T15:38:57.116Z",
+      "skills": {
+        "cli-for-agents": {
+          "integrity": "sha256-f841153e16518e5bc2c14f416ec0b3522e2bf97c9adbfb9b9594e8c139f4a839"
+        }
+      },
+      "skillSelection": [
+        "cli-for-agents"
+      ],
+      "skillsPath": "cli-for-agent/skills"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "lockfileVersion": 1,
+  "sources": {
+    "poteto/plugins@74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12:pstack/skills": {
+      "requestedRef": "74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12",
+      "resolvedRef": "74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12",
+      "resolvedAt": "2026-11-04T15:38:48.434Z",
+      "skills": {
+        "how": {
+          "integrity": "sha256-3c6db73b9931e95372fb1e488742cdaccaf6a50850a479d45a8a79b9f37b61d4"
+        },
+        "principle-guard-the-context-window": {
+          "integrity": "sha256-724d4e7fa987bb2a8f0d71e76b0d5fd988881b0a0dee7bd12448c1d3f2fb2c6a"
+        },
+        "why": {
+          "integrity": "sha256-624304476a64765862240b650cd7dd2ebdce9ece23ba5bdf9d4ff99443aae9e2"
+        }
+      },
+      "skillSelection": [
+        "how",
+        "principle-guard-the-context-window",
+        "why"
+      ],
+      "skillsPath": "pstack/skills"
+    }
+  }
+}

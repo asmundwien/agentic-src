@@ -1,0 +1,41 @@
+{
+  "lockfileVersion": 1,
+  "sources": {
+    "mattpocock/skills@c55ee46073ed923f86ce59a5eb3b6d895095d1b7:skills/productivity": {
+      "requestedRef": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
+      "resolvedRef": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
+      "resolvedAt": "2026-11-04T15:39:15.438Z",
+      "skills": {
+        "grilling": {
+          "integrity": "sha256-0ca4cfe5105d79c6ef6755491492e056c43e88b82666376d8ecd7fac695d96e6"
+        }
+      },
+      "skillSelection": [
+        "grilling"
+      ],
+      "skillsPath": "skills/productivity"
+    },
+    "mattpocock/skills@c55ee46073ed923f86ce59a5eb3b6d895095d1b7:skills/engineering": {
+      "requestedRef": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
+      "resolvedRef": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
+      "resolvedAt": "2026-11-04T15:39:15.474Z",
+      "skills": {
+        "prototype": {
+          "integrity": "sha256-492e4433fcd9cf88c0854aba063829ee248b208849e5827a45da8424199fd10f"
+        },
+        "research": {
+          "integrity": "sha256-75b7f9bbd7ccff6755a006f8b25d319a46ecbf6bd4b4c3323965ed9cb65e78ff"
+        },
+        "wayfinder": {
+          "integrity": "sha256-93d2a866764b048ad641e82e27e7a1940fc370e7933470bffeb937fa1fb3922b"
+        }
+      },
+      "skillSelection": [
+        "prototype",
+        "research",
+        "wayfinder"
+      ],
+      "skillsPath": "skills/engineering"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "lockfileVersion": 1,
+  "sources": {
+    "mattpocock/skills@c55ee46073ed923f86ce59a5eb3b6d895095d1b7:skills/engineering": {
+      "requestedRef": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
+      "resolvedRef": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
+      "resolvedAt": "2026-11-04T15:38:55.230Z",
+      "skills": {
+        "codebase-design": {
+          "integrity": "sha256-9f457cc65ef2d70eb5b8a44a4dae2b139840078b6596a67ee8c4e95f5a0e6f5c"
+        },
+        "domain-modeling": {
+          "integrity": "sha256-2bc3bb0a64ea9c6f5c3bcf78fc17f0fcdc7c062edc547ef006441de0b576d248"
+        }
+      },
+      "skillSelection": [
+        "codebase-design",
+        "domain-modeling"
+      ],
+      "skillsPath": "skills/engineering"
+    },
+    "joshuadavidthomas/agent-skills@516dee7a422b90937b2958d11c03694154ab9c09:.": {
+      "requestedRef": "516dee7a422b90937b2958d11c03694154ab9c09",
+      "resolvedRef": "516dee7a422b90937b2958d11c03694154ab9c09",
+      "resolvedAt": "2026-11-04T15:38:55.268Z",
+      "skills": {
+        "coding-standards": {
+          "integrity": "sha256-9f8927ba9f924a3be480eb32db2313ae04b9a9632f5a4a2780732103943c66f0"
+        }
+      },
+      "skillSelection": [
+        "coding-standards"
+      ],
+      "skillsPath": "."
+    },
+    "poteto/plugins@74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12:pstack/skills": {
+      "requestedRef": "74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12",
+      "resolvedRef": "74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12",
+      "resolvedAt": "2026-11-04T15:38:55.291Z",
+      "skills": {
+        "principle-subtract-before-you-add": {
+          "integrity": "sha256-695763e57eb71d9133565a040abe06633e7d4191785949fb2aa007b542f87523"
+        },
+        "principle-type-system-discipline": {
+          "integrity": "sha256-e2582b8295f9c0beb8861f282d7b8e645a2ee15b8b45f8da2550899c07766ae9"
+        }
+      },
+      "skillSelection": [
+        "principle-subtract-before-you-add",
+        "principle-type-system-discipline"
+      ],
+      "skillsPath": "pstack/skills"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "lockfileVersion": 1,
+  "sources": {
+    "wshobson/agents@4236bb91f8395b0435f1d8b8baf9e8e4c69a8620:plugins/javascript-typescript/skills": {
+      "requestedRef": "4236bb91f8395b0435f1d8b8baf9e8e4c69a8620",
+      "resolvedRef": "4236bb91f8395b0435f1d8b8baf9e8e4c69a8620",
+      "resolvedAt": "2026-11-04T15:39:13.037Z",
+      "skills": {
+        "modern-javascript-patterns": {
+          "integrity": "sha256-b25abe60ade2d960443e53dcb1d160e60374934c41b60856db473f4b643594cb"
+        },
+        "nodejs-backend-patterns": {
+          "integrity": "sha256-92dfeaec18b14df48242ab558b47be20d42ffc8343c74940bb55fd48f167a4ee"
+        },
+        "typescript-advanced-types": {
+          "integrity": "sha256-5cfece01370706036b65eae88c2c7ad9fa6f7a72dfd7ef58d65c666e3d8ee1a2"
+        }
+      },
+      "skillSelection": [
+        "modern-javascript-patterns",
+        "nodejs-backend-patterns",
+        "typescript-advanced-types"
+      ],
+      "skillsPath": "plugins/javascript-typescript/skills"
+    },
+    "poteto/plugins@74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12:pstack/skills": {
+      "requestedRef": "74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12",
+      "resolvedRef": "74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12",
+      "resolvedAt": "2026-11-04T15:39:13.087Z",
+      "skills": {
+        "typescript-best-practices": {
+          "integrity": "sha256-a5ad4082afbdf97f41bf5b7663d239a724e2d580ea60184391458c433d173c85"
+        }
+      },
+      "skillSelection": [
+        "typescript-best-practices"
+      ],
+      "skillsPath": "pstack/skills"
+    }
+  }
+}

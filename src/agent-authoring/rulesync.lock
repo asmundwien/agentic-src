@@ -1,0 +1,33 @@
+{
+  "lockfileVersion": 1,
+  "sources": {
+    "anthropics/skills@683bc88e56f3e09ba94f7055977f3d3aa499f202:skills": {
+      "requestedRef": "683bc88e56f3e09ba94f7055977f3d3aa499f202",
+      "resolvedRef": "683bc88e56f3e09ba94f7055977f3d3aa499f202",
+      "resolvedAt": "2026-11-04T15:38:52.356Z",
+      "skills": {
+        "skill-creator": {
+          "integrity": "sha256-d3f99a0544bca333074f0e74289d3c44c049f49257fbcda36355c85bb314e268"
+        }
+      },
+      "skillSelection": [
+        "skill-creator"
+      ],
+      "skillsPath": "skills"
+    },
+    "obra/superpowers@5bf4e78011075bcfc0dc295f0724994cd123ee71:skills": {
+      "requestedRef": "5bf4e78011075bcfc0dc295f0724994cd123ee71",
+      "resolvedRef": "5bf4e78011075bcfc0dc295f0724994cd123ee71",
+      "resolvedAt": "2026-11-04T15:38:52.382Z",
+      "skills": {
+        "writing-skills": {
+          "integrity": "sha256-950545f146b7a8de6bfd0183f4f58c6c23c751d4c38439ec61782675973913df"
+        }
+      },
+      "skillSelection": [
+        "writing-skills"
+      ],
+      "skillsPath": "skills"
+    }
+  }
+}

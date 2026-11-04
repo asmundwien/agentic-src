@@ -1,0 +1,47 @@
+{
+  "lockfileVersion": 1,
+  "sources": {
+    "mattpocock/skills@c55ee46073ed923f86ce59a5eb3b6d895095d1b7:skills/engineering": {
+      "requestedRef": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
+      "resolvedRef": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
+      "resolvedAt": "2026-11-04T15:39:17.841Z",
+      "skills": {
+        "tdd": {
+          "integrity": "sha256-28b5e430968370f51b03b88b4b4a046286192733d2f45bd5b8049e16f45fd234"
+        }
+      },
+      "skillSelection": [
+        "tdd"
+      ],
+      "skillsPath": "skills/engineering"
+    },
+    "wshobson/agents@4236bb91f8395b0435f1d8b8baf9e8e4c69a8620:plugins/javascript-typescript/skills": {
+      "requestedRef": "4236bb91f8395b0435f1d8b8baf9e8e4c69a8620",
+      "resolvedRef": "4236bb91f8395b0435f1d8b8baf9e8e4c69a8620",
+      "resolvedAt": "2026-11-04T15:39:17.859Z",
+      "skills": {
+        "javascript-testing-patterns": {
+          "integrity": "sha256-ebb808dbd0382157e6c4c9efeb0d10d448658088487026d68a0a6b1440eea115"
+        }
+      },
+      "skillSelection": [
+        "javascript-testing-patterns"
+      ],
+      "skillsPath": "plugins/javascript-typescript/skills"
+    },
+    "obra/superpowers@5bf4e78011075bcfc0dc295f0724994cd123ee71:skills": {
+      "requestedRef": "5bf4e78011075bcfc0dc295f0724994cd123ee71",
+      "resolvedRef": "5bf4e78011075bcfc0dc295f0724994cd123ee71",
+      "resolvedAt": "2026-11-04T15:39:17.884Z",
+      "skills": {
+        "test-driven-development": {
+          "integrity": "sha256-8e8772822d25e4dfc9295cf4526c6251a10458c7417ac50c4b42e5d9fc91e0b0"
+        }
+      },
+      "skillSelection": [
+        "test-driven-development"
+      ],
+      "skillsPath": "skills"
+    }
+  }
+}

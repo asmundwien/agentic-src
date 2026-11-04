@@ -1,0 +1,9 @@
+{
+  "$schema": "https://github.com/dyoshikawa/rulesync/releases/latest/download/config-schema.json",
+  "sources": [
+    {
+      "source": "poteto/plugins@74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12:pstack/skills",
+      "skills": ["principle-guard-the-context-window", "how", "why"]
+    }
+  ]
+}

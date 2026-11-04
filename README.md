@@ -1,57 +1,21 @@
-# Agentic
+# Agentic source
 
-A personal collection of generic agent instructions, skill adaptations and pinned external skills. APM resolves and distributes the collection.
+Source for the [Agentic](https://github.com/asmundwien/agentic) rules and skills distribution. Humans maintain this repository. GitHub Actions builds canonical collections and publishes them to a separate, machine-managed artifact repository.
 
-APM >= 0.31.0 is required.
+The source repository is `agentic-src`; the artifact repository is `agentic`. Cross-repository publication remains disabled until its target and credentials are configured. See [GitHub integration](docs/pipeline.md#github-integration) for the setup contract.
 
-## Usage
+## Work on collections
 
-The default collection contains general purpose instruction files that are usefull for any agent in any scenario, and prioritized to always earn a place in any context window.
-
-```sh
-apm install asmundwien/agentic
-```
-
-### Optional collections
-
-Optional collections contain domain specific instructions and should be installed on demand.
+Requires Node.js >=22.22.0 and pnpm 11.24.0.
 
 ```sh
-apm install asmundwien/agentic/collections/testing
+pnpm install --frozen-lockfile
+pnpm test
+GH_TOKEN="$(gh auth token)" pnpm build
 ```
 
-The available collections are:
+`pnpm build` installs every collection's upstream inputs with the pinned native Rulesync CLI and frozen locks, then assembles `dist/` without harness conversion. Authored content, upstream selections, and native locks live under `src/<name>/`. Downloaded `.curated/` inputs are ignored caches. `dist/` is entirely generated and ignored.
 
-| Collection                 | Contents                                                                         |
-| -------------------------- | -------------------------------------------------------------------------------- |
-| `agent-authoring`          | Skills and agent instructions.                                                   |
-| `architecture-and-design`  | Module design, domain modeling, architecture improvement, and design principles. |
-| `cli`                      | CLI design for coding agents.                                                    |
-| `code-quality`             | Code review and coding standards.                                                |
-| `debugging`                | Bug and performance regression diagnosis.                                        |
-| `documentation`            | README guidance and technical writing.                                           |
-| `human-operations`         | Human-only provisioning, credential setup, and cutover guidance.                 |
-| `node`                    | Node.js backend development, JavaScript patterns, and TypeScript best practices and advanced types. |
-| `human-growth`             | Guided learning and skill development through workspace teaching.               |
-| `planning-and-research`    | Plan review, prototyping, research, and large-work planning.                     |
-| `testing`                  | TDD and JavaScript testing patterns.                                             |
-| `version-control`          | Git merge and rebase conflict resolution.                                        |
+Use [Contributing](CONTRIBUTING.md) for source changes and local previews. [Pipeline behavior](docs/pipeline.md) specifies build ownership, publication triggers, versioning, safety checks, authentication, and local proof. [Consumer instructions](docs/consuming.md) are copied into the generated artifact's README.
 
-### Reproducibility
-
-When an install has generated the consumer lockfile, install and audit with:
-
-```sh
-apm install --frozen
-apm audit --ci
-```
-
-## Content
-
-- [The default collection](.apm/) of instructions that are prioritized to always be installed.
-- [Optional collections](collections/) of optional instructions that should be installed on demand.
-- [Suggestions](docs/suggestions.md) contain further resources that are not yet implemented or adopted as part of this distributable.
-
-## Licensing
-
-Most skills are upstream dependency references in the manifests, their licenses remain upstream. Local adaptations redistribute upstream material beside its source instruction.
+Do not commit generated collections, publish from a dirty working tree, or edit the artifact repository by hand. Consumers select materialized collections; they do not build this source repository or resolve its upstream dependencies.

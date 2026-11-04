@@ -1,0 +1,19 @@
+{
+  "lockfileVersion": 1,
+  "sources": {
+    "mattpocock/skills@c55ee46073ed923f86ce59a5eb3b6d895095d1b7:skills/productivity": {
+      "requestedRef": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
+      "resolvedRef": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
+      "resolvedAt": "2026-11-04T15:39:07.792Z",
+      "skills": {
+        "teach": {
+          "integrity": "sha256-7e67f13dc27781aad061d1eee61676c39c51d4d7ad6d7dc07ef943653c6e01ff"
+        }
+      },
+      "skillSelection": [
+        "teach"
+      ],
+      "skillsPath": "skills/productivity"
+    }
+  }
+}

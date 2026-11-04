@@ -1,0 +1,23 @@
+{
+  "lockfileVersion": 1,
+  "sources": {
+    "mattpocock/skills@c55ee46073ed923f86ce59a5eb3b6d895095d1b7:skills/engineering": {
+      "requestedRef": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
+      "resolvedRef": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
+      "resolvedAt": "2026-11-04T15:38:59.785Z",
+      "skills": {
+        "code-review": {
+          "integrity": "sha256-12daafb9c4f77deb3c3303dc2e6f8a3c2a0ff7928fc004af959ba18b8bd38068"
+        },
+        "improve-codebase-architecture": {
+          "integrity": "sha256-86f5e0413fa5b42b8e954858a09ce5a73187c61169f1b3b199bc79416fd78086"
+        }
+      },
+      "skillSelection": [
+        "code-review",
+        "improve-codebase-architecture"
+      ],
+      "skillsPath": "skills/engineering"
+    }
+  }
+}
