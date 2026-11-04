@@ -1,0 +1,10 @@
+{
+  "targets": ["omp"],
+  "features": ["skills"],
+  "sources": [
+    {
+      "source": "asmundwien/agentic:agent-authoring/skills",
+      "skills": ["*"]
+    }
+  ]
+}

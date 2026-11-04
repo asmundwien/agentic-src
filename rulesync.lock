@@ -1,0 +1,25 @@
+{
+  "lockfileVersion": 1,
+  "sources": {
+    "asmundwien/agentic:agent-authoring/skills": {
+      "requestedRef": "main",
+      "resolvedRef": "e93cbaa4d8b01d724a213644c18c4361da6d36c0",
+      "resolvedAt": "2026-11-04T21:21:09.459Z",
+      "skills": {
+        "skill-creator": {
+          "integrity": "sha256-d3f99a0544bca333074f0e74289d3c44c049f49257fbcda36355c85bb314e268"
+        },
+        "writing-for-agents": {
+          "integrity": "sha256-0ec6500bc5c3b61297da8e41ee89402ffe27328ed0d83dbc99e80592ebee95e5"
+        },
+        "writing-skills": {
+          "integrity": "sha256-950545f146b7a8de6bfd0183f4f58c6c23c751d4c38439ec61782675973913df"
+        }
+      },
+      "skillSelection": [
+        "*"
+      ],
+      "skillsPath": "agent-authoring/skills"
+    }
+  }
+}

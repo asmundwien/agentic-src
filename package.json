@@ -1,0 +1,14 @@
+{
+  "name": "agentic-src",
+  "private": true,
+  "scripts": {
+    "rulesync:install": "rulesync install",
+    "rulesync:update": "rulesync install --update",
+    "rulesync:preview": "rulesync generate --dry-run",
+    "rulesync:apply": "rulesync generate"
+  },
+  "devDependencies": {
+    "rulesync": "43.6.0"
+  },
+  "packageManager": "pnpm@11.28.10"
+}
