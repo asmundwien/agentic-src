@@ -15,10 +15,8 @@ rulesync.local.jsonc
 .cursor/
 .gemini/
 .opencode/
-build/
-dist/
-.agentic-build-*/
 __pycache__/
 .env
 .env.*
 .DS_Store
+.vscode/
