@@ -1,0 +1,202 @@
+lockfile_version: '1'
+apm_version: 0.35.0
+dependencies:
+- repo_url: poteto/plugins
+  name: typescript-best-practices
+  host: github.com
+  resolved_commit: 74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12
+  resolved_ref: 74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12
+  version: unknown
+  virtual_path: pstack/skills/typescript-best-practices
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/typescript-best-practices
+  - .agents/skills/typescript-best-practices/SKILL.md
+  - .agents/skills/typescript-best-practices/references/patterns.md
+  deployed_file_hashes:
+    .agents/skills/typescript-best-practices/SKILL.md: sha256:b6c9af16c4accbe6385eec297a0dff9327c0a2cff27ae4b3b31e79deae6631a8
+    .agents/skills/typescript-best-practices/references/patterns.md: sha256:76b5fb15312f6d6d4113b29594323044fae7e5754e0f407d3eb9e49cf3566ad6
+  content_hash: sha256:4594520c41850f73466b4e6cee8548d6b7170e9336b6e3cbf5e6196e8393af3d
+- repo_url: wshobson/agents
+  name: modern-javascript-patterns
+  host: github.com
+  resolved_commit: 4236bb91f8395b0435f1d8b8baf9e8e4c69a8620
+  resolved_ref: 4236bb91f8395b0435f1d8b8baf9e8e4c69a8620
+  version: unknown
+  virtual_path: plugins/javascript-typescript/skills/modern-javascript-patterns
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/modern-javascript-patterns
+  - .agents/skills/modern-javascript-patterns/SKILL.md
+  - .agents/skills/modern-javascript-patterns/references/advanced-patterns.md
+  - .agents/skills/modern-javascript-patterns/references/details.md
+  deployed_file_hashes:
+    .agents/skills/modern-javascript-patterns/SKILL.md: sha256:32e203b8d944115102986dcb3cf4c48918edc5dbf6942668875970121809c064
+    .agents/skills/modern-javascript-patterns/references/advanced-patterns.md: sha256:bd44770188cfa14d453b1c3026289cfaf7beff78f0eedbe47a9c6b9f24dfe3af
+    .agents/skills/modern-javascript-patterns/references/details.md: sha256:c0f9ef7a4a7efaaf827ea269f6dc3c8f58aaa78d7dec0d5419fac49cfa8fe23e
+  content_hash: sha256:43c17d81421fcd3ddf02f39397717a9b0f244c5e696bd6d2a9438159a3eb1336
+- repo_url: wshobson/agents
+  name: nodejs-backend-patterns
+  host: github.com
+  resolved_commit: 4236bb91f8395b0435f1d8b8baf9e8e4c69a8620
+  resolved_ref: 4236bb91f8395b0435f1d8b8baf9e8e4c69a8620
+  version: unknown
+  virtual_path: plugins/javascript-typescript/skills/nodejs-backend-patterns
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/nodejs-backend-patterns
+  - .agents/skills/nodejs-backend-patterns/SKILL.md
+  - .agents/skills/nodejs-backend-patterns/references/advanced-patterns.md
+  - .agents/skills/nodejs-backend-patterns/references/details.md
+  deployed_file_hashes:
+    .agents/skills/nodejs-backend-patterns/SKILL.md: sha256:d52e1150accdc27e916f0962c9ba0872fcbe8a7d849d905dcc795c0f9d05aeae
+    .agents/skills/nodejs-backend-patterns/references/advanced-patterns.md: sha256:f5f0036b4990badcd241263298b4f9ef3d358d94e3db5d08307d5b80369ed584
+    .agents/skills/nodejs-backend-patterns/references/details.md: sha256:5f05a3d5f6ded227f5d5987b0d9f2c0c11fcc0879353860bdbaa97e2eafe1838
+  content_hash: sha256:0b04870e768afe935a25f5f4d057bdd055ef510b5ed1c68d9eb6f1d8899947a4
+- repo_url: wshobson/agents
+  name: typescript-advanced-types
+  host: github.com
+  resolved_commit: 4236bb91f8395b0435f1d8b8baf9e8e4c69a8620
+  resolved_ref: 4236bb91f8395b0435f1d8b8baf9e8e4c69a8620
+  version: unknown
+  virtual_path: plugins/javascript-typescript/skills/typescript-advanced-types
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/typescript-advanced-types
+  - .agents/skills/typescript-advanced-types/SKILL.md
+  - .agents/skills/typescript-advanced-types/references/details.md
+  deployed_file_hashes:
+    .agents/skills/typescript-advanced-types/SKILL.md: sha256:c32101c65134d94ef1a3305ef486020b57be6408f97ed952c9c560e3fe04188d
+    .agents/skills/typescript-advanced-types/references/details.md: sha256:036a1dd41283384f086ac0eeb4f63c899b042ad68815a8ce00afebf606b55c44
+  content_hash: sha256:cdb885ca76ed5147c025e57a165c17eae923dff5faa9236cf0fe4365394a9a9d
+deployments:
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/modern-javascript-patterns
+  runtime: null
+  scope: project
+  owners:
+  - wshobson/agents/plugins/javascript-typescript/skills/modern-javascript-patterns
+  active_owner: wshobson/agents/plugins/javascript-typescript/skills/modern-javascript-patterns
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/modern-javascript-patterns/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - wshobson/agents/plugins/javascript-typescript/skills/modern-javascript-patterns
+  active_owner: wshobson/agents/plugins/javascript-typescript/skills/modern-javascript-patterns
+  content_hash: sha256:32e203b8d944115102986dcb3cf4c48918edc5dbf6942668875970121809c064
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/modern-javascript-patterns/references/advanced-patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - wshobson/agents/plugins/javascript-typescript/skills/modern-javascript-patterns
+  active_owner: wshobson/agents/plugins/javascript-typescript/skills/modern-javascript-patterns
+  content_hash: sha256:bd44770188cfa14d453b1c3026289cfaf7beff78f0eedbe47a9c6b9f24dfe3af
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/modern-javascript-patterns/references/details.md
+  runtime: null
+  scope: project
+  owners:
+  - wshobson/agents/plugins/javascript-typescript/skills/modern-javascript-patterns
+  active_owner: wshobson/agents/plugins/javascript-typescript/skills/modern-javascript-patterns
+  content_hash: sha256:c0f9ef7a4a7efaaf827ea269f6dc3c8f58aaa78d7dec0d5419fac49cfa8fe23e
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/nodejs-backend-patterns
+  runtime: null
+  scope: project
+  owners:
+  - wshobson/agents/plugins/javascript-typescript/skills/nodejs-backend-patterns
+  active_owner: wshobson/agents/plugins/javascript-typescript/skills/nodejs-backend-patterns
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/nodejs-backend-patterns/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - wshobson/agents/plugins/javascript-typescript/skills/nodejs-backend-patterns
+  active_owner: wshobson/agents/plugins/javascript-typescript/skills/nodejs-backend-patterns
+  content_hash: sha256:d52e1150accdc27e916f0962c9ba0872fcbe8a7d849d905dcc795c0f9d05aeae
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/nodejs-backend-patterns/references/advanced-patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - wshobson/agents/plugins/javascript-typescript/skills/nodejs-backend-patterns
+  active_owner: wshobson/agents/plugins/javascript-typescript/skills/nodejs-backend-patterns
+  content_hash: sha256:f5f0036b4990badcd241263298b4f9ef3d358d94e3db5d08307d5b80369ed584
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/nodejs-backend-patterns/references/details.md
+  runtime: null
+  scope: project
+  owners:
+  - wshobson/agents/plugins/javascript-typescript/skills/nodejs-backend-patterns
+  active_owner: wshobson/agents/plugins/javascript-typescript/skills/nodejs-backend-patterns
+  content_hash: sha256:5f05a3d5f6ded227f5d5987b0d9f2c0c11fcc0879353860bdbaa97e2eafe1838
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/typescript-advanced-types
+  runtime: null
+  scope: project
+  owners:
+  - wshobson/agents/plugins/javascript-typescript/skills/typescript-advanced-types
+  active_owner: wshobson/agents/plugins/javascript-typescript/skills/typescript-advanced-types
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/typescript-advanced-types/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - wshobson/agents/plugins/javascript-typescript/skills/typescript-advanced-types
+  active_owner: wshobson/agents/plugins/javascript-typescript/skills/typescript-advanced-types
+  content_hash: sha256:c32101c65134d94ef1a3305ef486020b57be6408f97ed952c9c560e3fe04188d
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/typescript-advanced-types/references/details.md
+  runtime: null
+  scope: project
+  owners:
+  - wshobson/agents/plugins/javascript-typescript/skills/typescript-advanced-types
+  active_owner: wshobson/agents/plugins/javascript-typescript/skills/typescript-advanced-types
+  content_hash: sha256:036a1dd41283384f086ac0eeb4f63c899b042ad68815a8ce00afebf606b55c44
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/typescript-best-practices
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/typescript-best-practices
+  active_owner: poteto/plugins/pstack/skills/typescript-best-practices
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/typescript-best-practices/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/typescript-best-practices
+  active_owner: poteto/plugins/pstack/skills/typescript-best-practices
+  content_hash: sha256:b6c9af16c4accbe6385eec297a0dff9327c0a2cff27ae4b3b31e79deae6631a8
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/typescript-best-practices/references/patterns.md
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/typescript-best-practices
+  active_owner: poteto/plugins/pstack/skills/typescript-best-practices
+  content_hash: sha256:76b5fb15312f6d6d4113b29594323044fae7e5754e0f407d3eb9e49cf3566ad6

@@ -26,14 +26,13 @@ The available collections are:
 | -------------------------- | -------------------------------------------------------------------------------- |
 | `agent-authoring`          | Skills and agent instructions.                                                   |
 | `architecture-and-design`  | Module design, domain modeling, architecture improvement, and design principles. |
-| `backend`                  | Node.js backend patterns.                                                        |
 | `cli`                      | CLI design for coding agents.                                                    |
 | `code-quality`             | Code review and coding standards.                                                |
 | `debugging`                | Bug and performance regression diagnosis.                                        |
 | `documentation`            | README guidance and technical writing.                                           |
 | `human-operations`         | Human-only provisioning, credential setup, and cutover guidance.                 |
-| `javascript-typescript`    | JavaScript patterns and TypeScript best practices and advanced types.            |
-| `learning-and-explanation` | Workspace teaching, code walkthroughs, and design rationale.                     |
+| `node`                    | Node.js backend development, JavaScript patterns, and TypeScript best practices and advanced types. |
+| `human-growth`             | Guided learning and skill development through workspace teaching.               |
 | `planning-and-research`    | Plan review, prototyping, research, and large-work planning.                     |
 | `testing`                  | TDD and JavaScript testing patterns.                                             |
 | `version-control`          | Git merge and rebase conflict resolution.                                        |

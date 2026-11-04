@@ -1,0 +1,92 @@
+lockfile_version: '1'
+apm_version: 0.35.0
+dependencies:
+- repo_url: mattpocock/skills
+  name: teach
+  host: github.com
+  resolved_commit: c55ee46073ed923f86ce59a5eb3b6d895095d1b7
+  resolved_ref: c55ee46073ed923f86ce59a5eb3b6d895095d1b7
+  version: unknown
+  virtual_path: skills/productivity/teach
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/teach
+  - .agents/skills/teach/GLOSSARY-FORMAT.md
+  - .agents/skills/teach/LEARNING-RECORD-FORMAT.md
+  - .agents/skills/teach/MISSION-FORMAT.md
+  - .agents/skills/teach/RESOURCES-FORMAT.md
+  - .agents/skills/teach/SKILL.md
+  - .agents/skills/teach/agents/openai.yaml
+  deployed_file_hashes:
+    .agents/skills/teach/GLOSSARY-FORMAT.md: sha256:9b99859ec28437668130d8f2ce5a342938970f8a1ed4fd38c3eab4f4b5fff210
+    .agents/skills/teach/LEARNING-RECORD-FORMAT.md: sha256:701fa34b6748aa89e6c960ffb815257f481a7d77fb2900f9028f7edf3fdd6052
+    .agents/skills/teach/MISSION-FORMAT.md: sha256:8cacbb3c0644d3ae0ea4965564797099401a6930a23f7cf462918576587f2418
+    .agents/skills/teach/RESOURCES-FORMAT.md: sha256:e9cacf34026e11a8d1c8f9de88abe5bcbf654f4ebdb25cae8c0de0d5f48f44ec
+    .agents/skills/teach/SKILL.md: sha256:a32df9dcdfc0c4fdc1c98e1ed3940c5f56b84c1aa90ff60346f32b8b53915b43
+    .agents/skills/teach/agents/openai.yaml: sha256:5856f3ae8aec742f1499c640aecdd5f1d6af5fa210a7c6ec794de8263a6f733f
+  content_hash: sha256:f563ef0510f50afacbb0da4635695e640f6d863e941e89b40874ac27f9f59859
+deployments:
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/teach
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/productivity/teach
+  active_owner: mattpocock/skills/skills/productivity/teach
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/teach/GLOSSARY-FORMAT.md
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/productivity/teach
+  active_owner: mattpocock/skills/skills/productivity/teach
+  content_hash: sha256:9b99859ec28437668130d8f2ce5a342938970f8a1ed4fd38c3eab4f4b5fff210
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/teach/LEARNING-RECORD-FORMAT.md
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/productivity/teach
+  active_owner: mattpocock/skills/skills/productivity/teach
+  content_hash: sha256:701fa34b6748aa89e6c960ffb815257f481a7d77fb2900f9028f7edf3fdd6052
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/teach/MISSION-FORMAT.md
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/productivity/teach
+  active_owner: mattpocock/skills/skills/productivity/teach
+  content_hash: sha256:8cacbb3c0644d3ae0ea4965564797099401a6930a23f7cf462918576587f2418
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/teach/RESOURCES-FORMAT.md
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/productivity/teach
+  active_owner: mattpocock/skills/skills/productivity/teach
+  content_hash: sha256:e9cacf34026e11a8d1c8f9de88abe5bcbf654f4ebdb25cae8c0de0d5f48f44ec
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/teach/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/productivity/teach
+  active_owner: mattpocock/skills/skills/productivity/teach
+  content_hash: sha256:a32df9dcdfc0c4fdc1c98e1ed3940c5f56b84c1aa90ff60346f32b8b53915b43
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/teach/agents/openai.yaml
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/productivity/teach
+  active_owner: mattpocock/skills/skills/productivity/teach
+  content_hash: sha256:5856f3ae8aec742f1499c640aecdd5f1d6af5fa210a7c6ec794de8263a6f733f

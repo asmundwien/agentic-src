@@ -1,5 +1,5 @@
 lockfile_version: '1'
-apm_version: 0.31.0
+apm_version: 0.35.0
 dependencies:
 - repo_url: poteto/plugins
   name: cli-for-agents
@@ -16,4 +16,22 @@ dependencies:
   deployed_file_hashes:
     .agents/skills/cli-for-agents/SKILL.md: sha256:1cddd028d24ece48cd538fc1d84e49f5922dc8d04ee88caf12666b0557575e09
   content_hash: sha256:d7fd8ae391a78becc5096d18c8dd6dde9567d2087390d450c19712db39f481e0
-deployments: []
+deployments:
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/cli-for-agents
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/cli-for-agent/skills/cli-for-agents
+  active_owner: poteto/plugins/cli-for-agent/skills/cli-for-agents
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/cli-for-agents/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/cli-for-agent/skills/cli-for-agents
+  active_owner: poteto/plugins/cli-for-agent/skills/cli-for-agents
+  content_hash: sha256:1cddd028d24ece48cd538fc1d84e49f5922dc8d04ee88caf12666b0557575e09

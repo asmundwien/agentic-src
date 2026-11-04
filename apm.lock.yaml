@@ -1,6 +1,29 @@
 lockfile_version: '1'
-apm_version: 0.31.0
+apm_version: 0.35.0
 dependencies:
+- repo_url: poteto/plugins
+  name: how
+  host: github.com
+  resolved_commit: 74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12
+  resolved_ref: 74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12
+  version: unknown
+  virtual_path: pstack/skills/how
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/how
+  - .agents/skills/how/SKILL.md
+  - .agents/skills/how/references/critic-prompt.md
+  - .agents/skills/how/references/critique-rubric.md
+  - .agents/skills/how/references/explainer-prompt.md
+  - .agents/skills/how/references/explorer-prompt.md
+  deployed_file_hashes:
+    .agents/skills/how/SKILL.md: sha256:d3f9b30a250c32672cf5e612c8d533907d4fd591a46874089d0cc1f3046d443f
+    .agents/skills/how/references/critic-prompt.md: sha256:aa77a15590814c814bd5cb074842029ab7b790c2e8379050525bdbc20739d1bb
+    .agents/skills/how/references/critique-rubric.md: sha256:5774ff2caf51796e54c4a61b63620a165de5801f23c8f47406e527abfbe9addc
+    .agents/skills/how/references/explainer-prompt.md: sha256:04336086e7c415394459ca2f461717d920e15339517dbf5a56ca042f8b4fead3
+    .agents/skills/how/references/explorer-prompt.md: sha256:fd1218b8cf1f467c644d4ce6fa5e54e6089ede65a28fbbae61f6ee7a2d462f85
+  content_hash: sha256:76f37467be4f1293d9d3822dcc2a89e97686894dc293caacc2c1429dee3193b9
 - repo_url: poteto/plugins
   name: principle-guard-the-context-window
   host: github.com
@@ -16,4 +39,241 @@ dependencies:
   deployed_file_hashes:
     .agents/skills/principle-guard-the-context-window/SKILL.md: sha256:291d0125125eabbc2109c880b1c1083aa95826187119a648b26c1c8ea6367179
   content_hash: sha256:4ba70fa93ea45d353d411daa7458e15959e6369f388cff727f639587e67b2fed
-deployments: []
+- repo_url: poteto/plugins
+  name: why
+  host: github.com
+  resolved_commit: 74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12
+  resolved_ref: 74dd2291e8e37b12fd6dc49b2acbd655c6bdaf12
+  version: unknown
+  virtual_path: pstack/skills/why
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/why
+  - .agents/skills/why/SKILL.md
+  - .agents/skills/why/references/epistemics.md
+  - .agents/skills/why/references/investigator-prompt.md
+  - .agents/skills/why/references/source-playbook.md
+  - .agents/skills/why/references/sources/code-archaeology.md
+  - .agents/skills/why/references/sources/databricks.md
+  - .agents/skills/why/references/sources/datadog.md
+  - .agents/skills/why/references/sources/incident-postmortem.md
+  - .agents/skills/why/references/sources/linear.md
+  - .agents/skills/why/references/sources/notion.md
+  - .agents/skills/why/references/sources/sentry.md
+  - .agents/skills/why/references/sources/slack.md
+  - .agents/skills/why/references/synthesizer-prompt.md
+  deployed_file_hashes:
+    .agents/skills/why/SKILL.md: sha256:0d52542dd598fcb1986474c897d613f137a8489e8dce73d07bc35c8c11dc4d65
+    .agents/skills/why/references/epistemics.md: sha256:ba99dcdc4fbce91a83b50fc0c9b2c5769febd95540b1722c6b87fe8f900bb60a
+    .agents/skills/why/references/investigator-prompt.md: sha256:e35d8eaea13f0a027dd35572d525e9f66e8f8918ca9e555237dc228f26278d5f
+    .agents/skills/why/references/source-playbook.md: sha256:3cfb0245d5b2019eeeaa7a0e023579d390f2cdcdff6942d2fe009b9efac0eb11
+    .agents/skills/why/references/sources/code-archaeology.md: sha256:8c14aa382f0de40829b2668d43e3f54814480bb93a486c9282ada4003f6b9dbd
+    .agents/skills/why/references/sources/databricks.md: sha256:e7de7e261777619c1fc0f604dbe53f755fecd026eda227c6da06a18fb2944596
+    .agents/skills/why/references/sources/datadog.md: sha256:db80803f1635a5015e3190f4753c4228083e6cebf222c84e24fc3c3919aa5574
+    .agents/skills/why/references/sources/incident-postmortem.md: sha256:486132457d3782eea64292ce7a2d3bbe3b24b372b20ca00de4329e820f74cd42
+    .agents/skills/why/references/sources/linear.md: sha256:7e1b72ba459089168efd701502f8c268d2481154aeeda1ddd84f840f7e974760
+    .agents/skills/why/references/sources/notion.md: sha256:2ce336dd3052967187a56ec33d308c7a69e7ef3b04ba7b17386a8b3914a0f000
+    .agents/skills/why/references/sources/sentry.md: sha256:0eef902cb0f835f7fa9bd85a8e19ba1505d05e59a0173dfe852d8d52d828266d
+    .agents/skills/why/references/sources/slack.md: sha256:60e4c8dbb941f563c86aec7267cde66443b1dc651422569c8d112bc9da7551f6
+    .agents/skills/why/references/synthesizer-prompt.md: sha256:fcdc69ede22f94da9e22f510bb0c4a75a63820f0b49b8d5fd54a196b4010bf2a
+  content_hash: sha256:c6839abfc0862dc85ed44b40de494d99e15afd658fbe3d46050daf20adef0c8d
+deployments:
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/how
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/how
+  active_owner: poteto/plugins/pstack/skills/how
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/how/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/how
+  active_owner: poteto/plugins/pstack/skills/how
+  content_hash: sha256:d3f9b30a250c32672cf5e612c8d533907d4fd591a46874089d0cc1f3046d443f
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/how/references/critic-prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/how
+  active_owner: poteto/plugins/pstack/skills/how
+  content_hash: sha256:aa77a15590814c814bd5cb074842029ab7b790c2e8379050525bdbc20739d1bb
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/how/references/critique-rubric.md
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/how
+  active_owner: poteto/plugins/pstack/skills/how
+  content_hash: sha256:5774ff2caf51796e54c4a61b63620a165de5801f23c8f47406e527abfbe9addc
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/how/references/explainer-prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/how
+  active_owner: poteto/plugins/pstack/skills/how
+  content_hash: sha256:04336086e7c415394459ca2f461717d920e15339517dbf5a56ca042f8b4fead3
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/how/references/explorer-prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/how
+  active_owner: poteto/plugins/pstack/skills/how
+  content_hash: sha256:fd1218b8cf1f467c644d4ce6fa5e54e6089ede65a28fbbae61f6ee7a2d462f85
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/principle-guard-the-context-window
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/principle-guard-the-context-window
+  active_owner: poteto/plugins/pstack/skills/principle-guard-the-context-window
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/principle-guard-the-context-window/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/principle-guard-the-context-window
+  active_owner: poteto/plugins/pstack/skills/principle-guard-the-context-window
+  content_hash: sha256:291d0125125eabbc2109c880b1c1083aa95826187119a648b26c1c8ea6367179
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/why
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/why
+  active_owner: poteto/plugins/pstack/skills/why
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/why/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/why
+  active_owner: poteto/plugins/pstack/skills/why
+  content_hash: sha256:0d52542dd598fcb1986474c897d613f137a8489e8dce73d07bc35c8c11dc4d65
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/why/references/epistemics.md
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/why
+  active_owner: poteto/plugins/pstack/skills/why
+  content_hash: sha256:ba99dcdc4fbce91a83b50fc0c9b2c5769febd95540b1722c6b87fe8f900bb60a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/why/references/investigator-prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/why
+  active_owner: poteto/plugins/pstack/skills/why
+  content_hash: sha256:e35d8eaea13f0a027dd35572d525e9f66e8f8918ca9e555237dc228f26278d5f
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/why/references/source-playbook.md
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/why
+  active_owner: poteto/plugins/pstack/skills/why
+  content_hash: sha256:3cfb0245d5b2019eeeaa7a0e023579d390f2cdcdff6942d2fe009b9efac0eb11
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/why/references/sources/code-archaeology.md
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/why
+  active_owner: poteto/plugins/pstack/skills/why
+  content_hash: sha256:8c14aa382f0de40829b2668d43e3f54814480bb93a486c9282ada4003f6b9dbd
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/why/references/sources/databricks.md
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/why
+  active_owner: poteto/plugins/pstack/skills/why
+  content_hash: sha256:e7de7e261777619c1fc0f604dbe53f755fecd026eda227c6da06a18fb2944596
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/why/references/sources/datadog.md
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/why
+  active_owner: poteto/plugins/pstack/skills/why
+  content_hash: sha256:db80803f1635a5015e3190f4753c4228083e6cebf222c84e24fc3c3919aa5574
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/why/references/sources/incident-postmortem.md
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/why
+  active_owner: poteto/plugins/pstack/skills/why
+  content_hash: sha256:486132457d3782eea64292ce7a2d3bbe3b24b372b20ca00de4329e820f74cd42
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/why/references/sources/linear.md
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/why
+  active_owner: poteto/plugins/pstack/skills/why
+  content_hash: sha256:7e1b72ba459089168efd701502f8c268d2481154aeeda1ddd84f840f7e974760
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/why/references/sources/notion.md
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/why
+  active_owner: poteto/plugins/pstack/skills/why
+  content_hash: sha256:2ce336dd3052967187a56ec33d308c7a69e7ef3b04ba7b17386a8b3914a0f000
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/why/references/sources/sentry.md
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/why
+  active_owner: poteto/plugins/pstack/skills/why
+  content_hash: sha256:0eef902cb0f835f7fa9bd85a8e19ba1505d05e59a0173dfe852d8d52d828266d
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/why/references/sources/slack.md
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/why
+  active_owner: poteto/plugins/pstack/skills/why
+  content_hash: sha256:60e4c8dbb941f563c86aec7267cde66443b1dc651422569c8d112bc9da7551f6
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/why/references/synthesizer-prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/why
+  active_owner: poteto/plugins/pstack/skills/why
+  content_hash: sha256:fcdc69ede22f94da9e22f510bb0c4a75a63820f0b49b8d5fd54a196b4010bf2a

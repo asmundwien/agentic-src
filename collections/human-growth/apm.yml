@@ -1,6 +1,6 @@
-name: agentic-learning-and-explanation
+name: agentic-human-growth
 version: 1.0.0
-description: Workspace learning, code walkthroughs, and design rationale.
+description: Guided learning and skill development through workspace teaching.
 author: Åsmund Røst Wien
 dependencies:
   apm:

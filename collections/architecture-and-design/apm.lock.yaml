@@ -1,6 +1,43 @@
 lockfile_version: '1'
-apm_version: 0.31.0
+apm_version: 0.35.0
 dependencies:
+- repo_url: joshuadavidthomas/agent-skills
+  name: coding-standards
+  host: github.com
+  resolved_commit: 516dee7a422b90937b2958d11c03694154ab9c09
+  resolved_ref: 516dee7a422b90937b2958d11c03694154ab9c09
+  version: unknown
+  virtual_path: coding-standards
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/coding-standards
+  - .agents/skills/coding-standards/README.md
+  - .agents/skills/coding-standards/SKILL.md
+  - .agents/skills/coding-standards/references/boundaries.md
+  - .agents/skills/coding-standards/references/complexity.md
+  - .agents/skills/coding-standards/references/domain-modeling.md
+  - .agents/skills/coding-standards/references/effects.md
+  - .agents/skills/coding-standards/references/error-handling.md
+  - .agents/skills/coding-standards/references/maintainability.md
+  - .agents/skills/coding-standards/references/modules.md
+  - .agents/skills/coding-standards/references/state.md
+  - .agents/skills/coding-standards/references/verification.md
+  - .agents/skills/coding-standards/references/vocabulary.md
+  deployed_file_hashes:
+    .agents/skills/coding-standards/README.md: sha256:865af5d9c74e413139e031ee52f925900fc0ad2fe7a5c876de25c2ea0672eed7
+    .agents/skills/coding-standards/SKILL.md: sha256:5988235deb58e83fb5e8e96ce84bf6b0d36d9eb8276da37901f7ea5b53c21fb6
+    .agents/skills/coding-standards/references/boundaries.md: sha256:0081d0345d5c768a4a675bfb3f5c7ebbc4a7f15dad4fc54f1cf5b44340a3e49a
+    .agents/skills/coding-standards/references/complexity.md: sha256:175cd27e37d1c9778b273f13059a34f6dfc94e9fd59a192684daaa678baa2496
+    .agents/skills/coding-standards/references/domain-modeling.md: sha256:e94fe3ddfc1f310c7bad03c4ce0d01cbbefd9a3ee0db410271379337ac947612
+    .agents/skills/coding-standards/references/effects.md: sha256:45914d104b082e7cf67d9f859893e136d8e6fb636b7556212c3d64be0e44da42
+    .agents/skills/coding-standards/references/error-handling.md: sha256:8c76831d2228e3b96c1255da2fa2b9299aa9b1efb14766d3c2b12e4b2eac2c15
+    .agents/skills/coding-standards/references/maintainability.md: sha256:500e8b6970329d1439a132bb7a4205afb11f93ecbbead2b16b8111425cc25940
+    .agents/skills/coding-standards/references/modules.md: sha256:d83a4e20e4bdf7a1b7345ab08ccec1aa872294bfd1f7a26e1fb63350141da50b
+    .agents/skills/coding-standards/references/state.md: sha256:ed91788766886c34a2e7dc71f23f9bc9272ac5bf2d74b16eadd5662bb94b6e19
+    .agents/skills/coding-standards/references/verification.md: sha256:0597ecdf0178b2d4e74681e4be0c8f252f98e8c8eda45195a0f472ef468c82cd
+    .agents/skills/coding-standards/references/vocabulary.md: sha256:5562155162be17ad524be5f7803d0a63d17d8be59b542754eae8ecb52a440a5b
+  content_hash: sha256:fce2d1705f5d0e701893c1251734cb57641c2d5e28519d59f65e8c5c14ff59b5
 - repo_url: mattpocock/skills
   name: codebase-design
   host: github.com
@@ -43,25 +80,6 @@ dependencies:
     .agents/skills/domain-modeling/SKILL.md: sha256:327a2b50620e2fd70abc6893cd6965e76b20f8d0adb0dc2c8d5eb3845efb643e
     .agents/skills/domain-modeling/agents/openai.yaml: sha256:f6bf2aa996c6e6f53fdd0708e18a0d16a56aed8322cca59fedbe3c0d2c75f06b
   content_hash: sha256:18a4b1d415a1851129c26a65cbd9ff63978e2cf66752c05e70b8889a6b002d24
-- repo_url: mattpocock/skills
-  name: improve-codebase-architecture
-  host: github.com
-  resolved_commit: c55ee46073ed923f86ce59a5eb3b6d895095d1b7
-  resolved_ref: c55ee46073ed923f86ce59a5eb3b6d895095d1b7
-  version: unknown
-  virtual_path: skills/engineering/improve-codebase-architecture
-  is_virtual: true
-  package_type: claude_skill
-  deployed_files:
-  - .agents/skills/improve-codebase-architecture
-  - .agents/skills/improve-codebase-architecture/HTML-REPORT.md
-  - .agents/skills/improve-codebase-architecture/SKILL.md
-  - .agents/skills/improve-codebase-architecture/agents/openai.yaml
-  deployed_file_hashes:
-    .agents/skills/improve-codebase-architecture/HTML-REPORT.md: sha256:581e8bb5a521e46bbda8ca7e19b15948bed882187108092ebb90c62513b77528
-    .agents/skills/improve-codebase-architecture/SKILL.md: sha256:d1ac25511a936ff4250a48dbcefda363837d6bb9321b3cba73df99fa37270a75
-    .agents/skills/improve-codebase-architecture/agents/openai.yaml: sha256:c8cb20f68ebf0edb4e497bc11ae5fcaa196004e661cd189015b04f4109ced7f1
-  content_hash: sha256:081ea865013038d70d3baa831788c9ba5e1b8198ab06e84eecdb2c09e6a2ac72
 - repo_url: poteto/plugins
   name: principle-subtract-before-you-add
   host: github.com
@@ -92,4 +110,270 @@ dependencies:
   deployed_file_hashes:
     .agents/skills/principle-type-system-discipline/SKILL.md: sha256:4a8aa0f02eb35acd6ea15e63184a5468eafd2c8b6b474aa3cd32b94359549cca
   content_hash: sha256:b7def964594ec888cabb8737f18327e2811e9401868173c5bdc23b120941338c
-deployments: []
+deployments:
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/codebase-design
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/codebase-design
+  active_owner: mattpocock/skills/skills/engineering/codebase-design
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/codebase-design/DEEPENING.md
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/codebase-design
+  active_owner: mattpocock/skills/skills/engineering/codebase-design
+  content_hash: sha256:f3dd099ce99289bd213914d8ee3e2429b78309c3957ca4583f7659551b1d53c1
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/codebase-design/DESIGN-IT-TWICE.md
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/codebase-design
+  active_owner: mattpocock/skills/skills/engineering/codebase-design
+  content_hash: sha256:8e740bf98446dbd4dfdc132ac4346d9a7eedaf93de6a495889171cf7f99f16bd
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/codebase-design/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/codebase-design
+  active_owner: mattpocock/skills/skills/engineering/codebase-design
+  content_hash: sha256:2c20617f87ec8af6a434859f381b2f061a69b530444e74eb39e78bb016a6d1e2
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/codebase-design/agents/openai.yaml
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/codebase-design
+  active_owner: mattpocock/skills/skills/engineering/codebase-design
+  content_hash: sha256:edebc9e4fcfe102114012575eaa9600b9b5fd08c311664f389c36e7bc717740f
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/coding-standards
+  runtime: null
+  scope: project
+  owners:
+  - joshuadavidthomas/agent-skills/coding-standards
+  active_owner: joshuadavidthomas/agent-skills/coding-standards
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/coding-standards/README.md
+  runtime: null
+  scope: project
+  owners:
+  - joshuadavidthomas/agent-skills/coding-standards
+  active_owner: joshuadavidthomas/agent-skills/coding-standards
+  content_hash: sha256:865af5d9c74e413139e031ee52f925900fc0ad2fe7a5c876de25c2ea0672eed7
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/coding-standards/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - joshuadavidthomas/agent-skills/coding-standards
+  active_owner: joshuadavidthomas/agent-skills/coding-standards
+  content_hash: sha256:5988235deb58e83fb5e8e96ce84bf6b0d36d9eb8276da37901f7ea5b53c21fb6
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/coding-standards/references/boundaries.md
+  runtime: null
+  scope: project
+  owners:
+  - joshuadavidthomas/agent-skills/coding-standards
+  active_owner: joshuadavidthomas/agent-skills/coding-standards
+  content_hash: sha256:0081d0345d5c768a4a675bfb3f5c7ebbc4a7f15dad4fc54f1cf5b44340a3e49a
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/coding-standards/references/complexity.md
+  runtime: null
+  scope: project
+  owners:
+  - joshuadavidthomas/agent-skills/coding-standards
+  active_owner: joshuadavidthomas/agent-skills/coding-standards
+  content_hash: sha256:175cd27e37d1c9778b273f13059a34f6dfc94e9fd59a192684daaa678baa2496
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/coding-standards/references/domain-modeling.md
+  runtime: null
+  scope: project
+  owners:
+  - joshuadavidthomas/agent-skills/coding-standards
+  active_owner: joshuadavidthomas/agent-skills/coding-standards
+  content_hash: sha256:e94fe3ddfc1f310c7bad03c4ce0d01cbbefd9a3ee0db410271379337ac947612
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/coding-standards/references/effects.md
+  runtime: null
+  scope: project
+  owners:
+  - joshuadavidthomas/agent-skills/coding-standards
+  active_owner: joshuadavidthomas/agent-skills/coding-standards
+  content_hash: sha256:45914d104b082e7cf67d9f859893e136d8e6fb636b7556212c3d64be0e44da42
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/coding-standards/references/error-handling.md
+  runtime: null
+  scope: project
+  owners:
+  - joshuadavidthomas/agent-skills/coding-standards
+  active_owner: joshuadavidthomas/agent-skills/coding-standards
+  content_hash: sha256:8c76831d2228e3b96c1255da2fa2b9299aa9b1efb14766d3c2b12e4b2eac2c15
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/coding-standards/references/maintainability.md
+  runtime: null
+  scope: project
+  owners:
+  - joshuadavidthomas/agent-skills/coding-standards
+  active_owner: joshuadavidthomas/agent-skills/coding-standards
+  content_hash: sha256:500e8b6970329d1439a132bb7a4205afb11f93ecbbead2b16b8111425cc25940
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/coding-standards/references/modules.md
+  runtime: null
+  scope: project
+  owners:
+  - joshuadavidthomas/agent-skills/coding-standards
+  active_owner: joshuadavidthomas/agent-skills/coding-standards
+  content_hash: sha256:d83a4e20e4bdf7a1b7345ab08ccec1aa872294bfd1f7a26e1fb63350141da50b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/coding-standards/references/state.md
+  runtime: null
+  scope: project
+  owners:
+  - joshuadavidthomas/agent-skills/coding-standards
+  active_owner: joshuadavidthomas/agent-skills/coding-standards
+  content_hash: sha256:ed91788766886c34a2e7dc71f23f9bc9272ac5bf2d74b16eadd5662bb94b6e19
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/coding-standards/references/verification.md
+  runtime: null
+  scope: project
+  owners:
+  - joshuadavidthomas/agent-skills/coding-standards
+  active_owner: joshuadavidthomas/agent-skills/coding-standards
+  content_hash: sha256:0597ecdf0178b2d4e74681e4be0c8f252f98e8c8eda45195a0f472ef468c82cd
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/coding-standards/references/vocabulary.md
+  runtime: null
+  scope: project
+  owners:
+  - joshuadavidthomas/agent-skills/coding-standards
+  active_owner: joshuadavidthomas/agent-skills/coding-standards
+  content_hash: sha256:5562155162be17ad524be5f7803d0a63d17d8be59b542754eae8ecb52a440a5b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/domain-modeling
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/domain-modeling
+  active_owner: mattpocock/skills/skills/engineering/domain-modeling
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/domain-modeling/ADR-FORMAT.md
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/domain-modeling
+  active_owner: mattpocock/skills/skills/engineering/domain-modeling
+  content_hash: sha256:944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/domain-modeling/CONTEXT-FORMAT.md
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/domain-modeling
+  active_owner: mattpocock/skills/skills/engineering/domain-modeling
+  content_hash: sha256:17ab16ce783e4d2801ee52fd9acdf550cbf44de65ae76797a93943bbedf22a13
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/domain-modeling/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/domain-modeling
+  active_owner: mattpocock/skills/skills/engineering/domain-modeling
+  content_hash: sha256:327a2b50620e2fd70abc6893cd6965e76b20f8d0adb0dc2c8d5eb3845efb643e
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/domain-modeling/agents/openai.yaml
+  runtime: null
+  scope: project
+  owners:
+  - mattpocock/skills/skills/engineering/domain-modeling
+  active_owner: mattpocock/skills/skills/engineering/domain-modeling
+  content_hash: sha256:f6bf2aa996c6e6f53fdd0708e18a0d16a56aed8322cca59fedbe3c0d2c75f06b
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/explicit-effects
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/explicit-effects/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:f3531394ba54e3d33003594206786de8577ad90ac919ba7facee57a9929de077
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/principle-subtract-before-you-add
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/principle-subtract-before-you-add
+  active_owner: poteto/plugins/pstack/skills/principle-subtract-before-you-add
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/principle-subtract-before-you-add/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/principle-subtract-before-you-add
+  active_owner: poteto/plugins/pstack/skills/principle-subtract-before-you-add
+  content_hash: sha256:162e4dd99d56d8e225cb3041c56d97eb4f1ab281a885a7178414199b2ad44636
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/principle-type-system-discipline
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/principle-type-system-discipline
+  active_owner: poteto/plugins/pstack/skills/principle-type-system-discipline
+  content_hash: null
+- kind: project-relative
+  target: agent-skills
+  value: .agents/skills/principle-type-system-discipline/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - poteto/plugins/pstack/skills/principle-type-system-discipline
+  active_owner: poteto/plugins/pstack/skills/principle-type-system-discipline
+  content_hash: sha256:4a8aa0f02eb35acd6ea15e63184a5468eafd2c8b6b474aa3cd32b94359549cca
+local_deployed_files:
+- .agents/skills/explicit-effects
+- .agents/skills/explicit-effects/SKILL.md
+local_deployed_file_hashes:
+  .agents/skills/explicit-effects/SKILL.md: sha256:f3531394ba54e3d33003594206786de8577ad90ac919ba7facee57a9929de077
