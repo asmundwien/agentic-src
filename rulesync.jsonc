@@ -5,6 +5,10 @@
     {
       "source": "asmundwien/agentic:agent-authoring/skills",
       "skills": ["*"]
+    },
+    {
+      "source": "asmundwien/agentic:documentation/skills",
+      "skills": ["*"]
     }
   ]
 }

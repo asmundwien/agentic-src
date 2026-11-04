@@ -20,6 +20,23 @@
         "*"
       ],
       "skillsPath": "agent-authoring/skills"
+    },
+    "asmundwien/agentic:documentation/skills": {
+      "requestedRef": "main",
+      "resolvedRef": "e93cbaa4d8b01d724a213644c18c4361da6d36c0",
+      "resolvedAt": "2026-11-04T21:36:03.169Z",
+      "skills": {
+        "crafting-effective-readmes": {
+          "integrity": "sha256-0ec39c8e70180ce833b830bccf3f241826c3944a261c8ad4b438685cd46d2f74"
+        },
+        "technical-writing": {
+          "integrity": "sha256-d67110528acd1213f9fa40f35a24e3dbd2f9726f83fe8dae30ddd40b36739d54"
+        }
+      },
+      "skillSelection": [
+        "*"
+      ],
+      "skillsPath": "documentation/skills"
     }
   }
 }
