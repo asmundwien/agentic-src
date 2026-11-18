@@ -20,7 +20,7 @@ To install collections in another project, follow the [Agentic installation inst
 | [node](src/node/)                                       | JavaScript, Node.js, and TypeScript patterns.                                                    |
 | [planning-and-research](src/planning-and-research/)     | Requirements questions, prototyping, research, and planning.                                     |
 | [testing](src/testing/)                                 | Test-driven development and JavaScript testing patterns.                                         |
-| [version-control](src/version-control/)                 | Merge conflict resolution.                                                                       |
+| [version-control](src/version-control/)                 | Conventional commit messages and merge conflict resolution.                                      |
 
 ## Layout
 
@@ -33,7 +33,7 @@ Each collection lives under `src/<collection>/`:
 | `.rulesync/rules/`         | Holds local rules.                                                                       |
 | `.rulesync/skills/<name>/` | Holds local skills, each with a `SKILL.md` entry point and any supporting files.         |
 
-Rulesync downloads upstream content into `.rulesync/rules/.curated/` and `.rulesync/skills/.curated/`. These directories are ignored. Do not edit them or copy downloaded content into source control.
+Rulesync downloads upstream content into `.rulesync/rules/.curated/` and `.rulesync/skills/.curated/`. These directories are ignored.
 
 ## Work on collections
 
@@ -62,23 +62,25 @@ export GH_TOKEN="$(gh auth token)"
 2. From the collection directory, run `pnpm exec rulesync install` to fetch the selection and update `rulesync.lock`.
 3. Review and commit the configuration and lockfile together.
 
-Use `pnpm exec rulesync install --update` to force Rulesync to resolve the configured refs again. It does not advance a pinned SHA to a newer commit. Change that SHA in the configuration when upgrading a pinned source.
+Use `pnpm exec rulesync install --update` to resolve the configured refs again. It does not advance a pinned SHA. To upgrade a pinned source, change the SHA in the configuration.
 
-### Add or change local content
+### Edit local content
 
-Edit rules under `.rulesync/rules/` and skills under `.rulesync/skills/<name>/`. Keep supporting files with the skill and preserve licenses and attribution for adapted content.
+Edit local rules under `.rulesync/rules/` and local skills under `.rulesync/skills/<name>/`. Keep supporting files with the skill and preserve licenses and attribution for adapted content.
 
-To add a collection, create `src/<collection>/rulesync.jsonc`, install its upstream sources to produce a lockfile, and add any local content under its `.rulesync/` directory. The publishing script discovers collection configurations under `src/` automatically.
+Avoid unintended conflicts with upstream content. A local rule overrides the upstream file at the same path. A local skill with the same directory name replaces the entire upstream skill directory, including its supporting files.
 
-Do not edit generated collections in `agentic`. Publication copies upstream content first, then local content. A local rule overrides the upstream file at the same path. A local skill with the same directory name replaces the entire upstream skill directory, including its supporting files.
+### Add a collection
+
+Create `src/<collection>/rulesync.jsonc`, then run `pnpm exec rulesync install` from that directory to produce its lockfile. Add local content under its `.rulesync/` directory. Publication discovers collection configurations under `src/` automatically.
 
 ## Publish collections
 
-Publishing runs in the sibling `agentic` repository, not through this repository's package scripts.
+Publishing runs in the sibling `agentic` repository.
 
 1. Push the source changes to `agentic-src`'s `main` branch.
 2. In `agentic`, run the [Generate collections workflow](https://github.com/asmundwien/agentic/actions/workflows/collections.yml).
-3. The workflow checks out both repositories' `main` branches, installs each collection's upstream content with `rulesync install --frozen`, and publishes `<collection>/rules/` and `<collection>/skills/` in `agentic`.
+3. The workflow regenerates the collections in `agentic` from both repositories' `main` branches.
 
 ## Repository-local agent tooling
 
