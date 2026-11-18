@@ -37,6 +37,23 @@
         "*"
       ],
       "skillsPath": "documentation/skills"
+    },
+    "asmundwien/agentic:version-control/skills": {
+      "requestedRef": "main",
+      "resolvedRef": "7467d56e1004a7e53bffc2549184e56ae37c1048",
+      "resolvedAt": "2026-11-18T16:08:21.507Z",
+      "skills": {
+        "resolving-merge-conflicts": {
+          "integrity": "sha256-310fa72a34cddd1dd1a9790f9ebc17bf2c83caeae5cdf87e2485be8b1abec90e"
+        },
+        "use-conventional-commits": {
+          "integrity": "sha256-1e1dee943be002d960b7cb19d3a6c26ba77e65a4e560124db73618faebad4927"
+        }
+      },
+      "skillSelection": [
+        "*"
+      ],
+      "skillsPath": "version-control/skills"
     }
   }
 }

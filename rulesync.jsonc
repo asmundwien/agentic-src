@@ -9,6 +9,10 @@
     {
       "source": "asmundwien/agentic:documentation/skills",
       "skills": ["*"]
+    },
+    {
+      "source": "asmundwien/agentic:version-control/skills",
+      "skills": ["*"]
     }
   ]
 }
