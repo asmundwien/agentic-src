@@ -54,6 +54,20 @@
         "*"
       ],
       "skillsPath": "version-control/skills"
+    },
+    "asmundwien/agentic:cli/skills": {
+      "requestedRef": "main",
+      "resolvedRef": "7467d56e1004a7e53bffc2549184e56ae37c1048",
+      "resolvedAt": "2026-11-24T11:59:48.722Z",
+      "skills": {
+        "cli-for-agents": {
+          "integrity": "sha256-f841153e16518e5bc2c14f416ec0b3522e2bf97c9adbfb9b9594e8c139f4a839"
+        }
+      },
+      "skillSelection": [
+        "*"
+      ],
+      "skillsPath": "cli/skills"
     }
   }
 }
