@@ -4,6 +4,7 @@
 import argparse
 import json
 from pathlib import Path
+import shlex
 import sys
 
 
@@ -16,35 +17,39 @@ MESSAGES = {
 }
 
 
+class ArgumentParser(argparse.ArgumentParser):
+    def error(self, message):
+        super().error(f"{message}\nExample: {self.prog} docs/setup.md")
+
+
 def main(argv=None):
-    parser = argparse.ArgumentParser(
+    command = shlex.join(["python3", str(Path(__file__).resolve())])
+    parser = ArgumentParser(
+        prog=command,
         description=(
-            "Check UTF-8 documents by word count. Counts all whitespace-delimited "
+            "Check UTF-8 Markdown files by word count. Counts all whitespace-delimited "
             "tokens, including Markdown, frontmatter, and code. No Markdown parsing. "
             "Outputs JSON Lines. Exit 0: green/yellow; 1: any red; 2: input error."
         ),
-        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog=(
+            "Examples:\n"
+            f"  {command} docs/setup.md docs/operations.md\n"
+            f"  {command} --warn-at 2000 --error-at 2500 docs/setup.md"
+        ),
     )
-    parser.add_argument("--warn-at", type=int, default=WARN_AT, help="Yellow starts at this word count")
-    parser.add_argument("--error-at", type=int, default=ERROR_AT, help="Red starts at this word count")
-    parser.add_argument("paths", nargs="+", help="Document paths; use - once for UTF-8 standard input")
+    parser.add_argument("--warn-at", type=int, default=WARN_AT, help="Yellow starts at this word count (default: %(default)s)")
+    parser.add_argument("--error-at", type=int, default=ERROR_AT, help="Red starts at this word count (default: %(default)s)")
+    parser.add_argument("paths", nargs="+", help="Markdown file paths")
     args = parser.parse_args(argv)
     if not 0 < args.warn_at < args.error_at:
         parser.error("thresholds must satisfy 0 < --warn-at < --error-at")
-    if args.paths.count("-") > 1:
-        parser.error("standard input (-) can only be read once")
 
     exit_code = 0
     for path in args.paths:
         try:
-            if path == "-":
-                if sys.stdin is None:
-                    raise OSError("standard input is unavailable")
-                sys.stdin.reconfigure(encoding="utf-8")
-                words = sum(len(line.split()) for line in sys.stdin)
-            else:
-                with Path(path).open(encoding="utf-8") as source:
-                    words = sum(len(line.split()) for line in source)
+            with Path(path).open(encoding="utf-8") as source:
+                words = sum(len(line.split()) for line in source)
         except (OSError, UnicodeError) as error:
             print(f"{path}: {error}", file=sys.stderr)
             exit_code = 2

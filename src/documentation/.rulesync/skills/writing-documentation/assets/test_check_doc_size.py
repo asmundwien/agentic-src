@@ -1,7 +1,6 @@
 """Run with python3 -m unittest discover -s assets -p 'test_*.py'."""
 
 import json
-import os
 from pathlib import Path
 import subprocess
 import sys
@@ -13,14 +12,19 @@ SCRIPT = Path(__file__).with_name("check_doc_size.py")
 
 
 class SizeCheckTests(unittest.TestCase):
-    def run_check(self, *args, text=None):
+    def run_check(self, *args):
         return subprocess.run(
             [sys.executable, str(SCRIPT), *map(str, args)],
-            input=text,
             capture_output=True,
             text=True,
             encoding="utf-8",
         )
+
+    def check_text(self, text):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "document.md"
+            path.write_text(text, encoding="utf-8")
+            return self.run_check(path)
 
     def records(self, result):
         return [json.loads(line) for line in result.stdout.splitlines()]
@@ -35,7 +39,7 @@ class SizeCheckTests(unittest.TestCase):
             (3001, "red", 1),
         ]:
             with self.subTest(words=words):
-                result = self.run_check("-", text="word " * words)
+                result = self.check_text("word " * words)
                 self.assertEqual(result.returncode, exit_code, result.stderr)
                 record, = self.records(result)
                 self.assertEqual(record["words"], words)
@@ -49,7 +53,7 @@ class SizeCheckTests(unittest.TestCase):
         tokens = ["#", "Scope", "café", "日本語", "don't", "request-timeout", "```"]
         for separator in [" ", "\n", "\t", "\u2003"]:
             with self.subTest(separator=repr(separator)):
-                result = self.run_check("-", text=separator.join(tokens))
+                result = self.check_text(separator.join(tokens))
                 self.assertEqual(result.returncode, 0, result.stderr)
                 self.assertEqual(self.records(result)[0]["words"], len(tokens))
 
@@ -68,30 +72,12 @@ class SizeCheckTests(unittest.TestCase):
     def test_missing_file_does_not_hide_other_results(self):
         with tempfile.TemporaryDirectory() as directory:
             missing = Path(directory) / "missing.md"
-            result = self.run_check(missing, "-", text="word " * 3000)
+            document = Path(directory) / "document.md"
+            document.write_text("word " * 3000, encoding="utf-8")
+            result = self.run_check(missing, document)
             self.assertEqual(result.returncode, 2)
             self.assertIn(str(missing), result.stderr)
             self.assertEqual(self.records(result)[0]["state"], "red")
-
-    @unittest.skipUnless(os.name == "posix", "requires POSIX file descriptors")
-    def test_closed_stdin_does_not_hide_other_results(self):
-        with tempfile.TemporaryDirectory() as directory:
-            document = Path(directory) / "document.md"
-            document.write_text("two words", encoding="utf-8")
-            result = subprocess.run(
-                [sys.executable, str(SCRIPT), "-", str(document)],
-                stdin=subprocess.DEVNULL,
-                preexec_fn=lambda: os.close(0),
-                capture_output=True,
-                text=True,
-                encoding="utf-8",
-            )
-            self.assertEqual(result.returncode, 2, result.stderr)
-            self.assertIn("-:", result.stderr)
-            self.assertNotIn("Traceback", result.stderr)
-            record, = self.records(result)
-            self.assertEqual(record["path"], str(document))
-            self.assertEqual(record["words"], 2)
 
     def test_invalid_utf8_and_directory_are_errors(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -104,17 +90,16 @@ class SizeCheckTests(unittest.TestCase):
                     self.assertIn(str(path), result.stderr)
                     self.assertEqual(result.stdout, "")
 
-    def test_invalid_thresholds_and_duplicate_stdin_are_rejected(self):
+    def test_invalid_thresholds_and_missing_paths_are_rejected(self):
         for args in [
-            ["--warn-at", "0", "-"],
-            ["--warn-at", "4", "--error-at", "4", "-"],
-            ["--warn-at", "5", "--error-at", "4", "-"],
-            ["--error-at", "invalid", "-"],
-            ["-", "-"],
+            ["--warn-at", "0", "document.md"],
+            ["--warn-at", "4", "--error-at", "4", "document.md"],
+            ["--warn-at", "5", "--error-at", "4", "document.md"],
+            ["--error-at", "invalid", "document.md"],
             [],
         ]:
             with self.subTest(args=args):
-                result = self.run_check(*args, text="")
+                result = self.run_check(*args)
                 self.assertEqual(result.returncode, 2)
                 self.assertEqual(result.stdout, "")
 

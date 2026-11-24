@@ -7,6 +7,10 @@
       "skills": ["*"]
     },
     {
+      "source": "asmundwien/agentic:cli/skills",
+      "skills": ["*"]
+    },
+    {
       "source": "asmundwien/agentic:documentation/skills",
       "skills": ["*"]
     },
