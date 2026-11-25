@@ -3,8 +3,8 @@
   "sources": {
     "asmundwien/agentic:agent-authoring/skills": {
       "requestedRef": "main",
-      "resolvedRef": "e93cbaa4d8b01d724a213644c18c4361da6d36c0",
-      "resolvedAt": "2026-11-04T21:21:09.459Z",
+      "resolvedRef": "bf06f40e69465502a2e145cdf1c12fbdd63c6240",
+      "resolvedAt": "2026-11-25T11:30:15.609Z",
       "skills": {
         "skill-creator": {
           "integrity": "sha256-d3f99a0544bca333074f0e74289d3c44c049f49257fbcda36355c85bb314e268"
@@ -21,16 +21,36 @@
       ],
       "skillsPath": "agent-authoring/skills"
     },
+    "asmundwien/agentic:cli/skills": {
+      "requestedRef": "main",
+      "resolvedRef": "bf06f40e69465502a2e145cdf1c12fbdd63c6240",
+      "resolvedAt": "2026-11-25T11:30:15.649Z",
+      "skills": {
+        "cli-for-agents": {
+          "integrity": "sha256-f841153e16518e5bc2c14f416ec0b3522e2bf97c9adbfb9b9594e8c139f4a839"
+        }
+      },
+      "skillSelection": [
+        "*"
+      ],
+      "skillsPath": "cli/skills"
+    },
     "asmundwien/agentic:documentation/skills": {
       "requestedRef": "main",
-      "resolvedRef": "e93cbaa4d8b01d724a213644c18c4361da6d36c0",
-      "resolvedAt": "2026-11-04T21:36:03.169Z",
+      "resolvedRef": "bf06f40e69465502a2e145cdf1c12fbdd63c6240",
+      "resolvedAt": "2026-11-25T11:30:15.695Z",
       "skills": {
         "crafting-effective-readmes": {
           "integrity": "sha256-0ec39c8e70180ce833b830bccf3f241826c3944a261c8ad4b438685cd46d2f74"
         },
+        "organizing-documentation": {
+          "integrity": "sha256-dc889d2c8d85056d365ff51ddb7095cd0ef14cdb77c3db6ebf1f5e1b7e380679"
+        },
         "technical-writing": {
           "integrity": "sha256-d67110528acd1213f9fa40f35a24e3dbd2f9726f83fe8dae30ddd40b36739d54"
+        },
+        "writing-documentation": {
+          "integrity": "sha256-4ff9867ac368b7620d16dae3de3083006f8dda67d543fbbc76dc070345a61153"
         }
       },
       "skillSelection": [
@@ -40,8 +60,8 @@
     },
     "asmundwien/agentic:version-control/skills": {
       "requestedRef": "main",
-      "resolvedRef": "7467d56e1004a7e53bffc2549184e56ae37c1048",
-      "resolvedAt": "2026-11-18T16:08:21.507Z",
+      "resolvedRef": "bf06f40e69465502a2e145cdf1c12fbdd63c6240",
+      "resolvedAt": "2026-11-25T11:30:15.735Z",
       "skills": {
         "resolving-merge-conflicts": {
           "integrity": "sha256-310fa72a34cddd1dd1a9790f9ebc17bf2c83caeae5cdf87e2485be8b1abec90e"
@@ -54,20 +74,6 @@
         "*"
       ],
       "skillsPath": "version-control/skills"
-    },
-    "asmundwien/agentic:cli/skills": {
-      "requestedRef": "main",
-      "resolvedRef": "7467d56e1004a7e53bffc2549184e56ae37c1048",
-      "resolvedAt": "2026-11-24T11:59:48.722Z",
-      "skills": {
-        "cli-for-agents": {
-          "integrity": "sha256-f841153e16518e5bc2c14f416ec0b3522e2bf97c9adbfb9b9594e8c139f4a839"
-        }
-      },
-      "skillSelection": [
-        "*"
-      ],
-      "skillsPath": "cli/skills"
     }
   }
 }
