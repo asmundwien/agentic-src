@@ -8,9 +8,9 @@ To install collections in another project, follow the [Agentic installation inst
 
 | Collection                                              | Content                                                                                          |
 | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| [agent-authoring](src/agent-authoring/)                 | Skill creation, skill verification, and writing instructions for agents.                         |
+| [agent-authoring](src/agent-authoring/)                 | Skill creation, verification, and writing instructions for agents.                              |
 | [architecture-and-design](src/architecture-and-design/) | Codebase design, domain modeling, coding standards, type discipline, and explicit effects.       |
-| [base](src/base/)                                       | Skill discovery and prose rules, context management, and explanations of behavior and rationale. |
+| [base](src/base/)                                       | Skill discovery and prose rules, context management, explanations of behavior and rationale, and [human-invoked behavior capture](src/base/.rulesync/skills/report-on/SKILL.md). |
 | [cli](src/cli/)                                         | Designing command-line tools for agent use.                                                      |
 | [code-quality](src/code-quality/)                       | Code review and codebase architecture improvements.                                              |
 | [debugging](src/debugging/)                             | Bug diagnosis.                                                                                   |
